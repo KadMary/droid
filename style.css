@@ -29,7 +29,6 @@ header {
 }
 
 .menuContent {
-    font-size: 24px;
     margin-bottom: 5%;
 }
 
@@ -94,10 +93,9 @@ a {
 
 .call {
     position: fixed;
-    left: 90%;
-    top: 80%;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    display: block;
+    margin-left: 90vw;
+    margin-top: 35vh;
 }
 
 footer {
@@ -127,6 +125,7 @@ footer {
     margin: 0 5% 0 5%;
     width: 90%;
     text-align: center;
+    font-size: 24px;
 }
 
 b {
@@ -136,4 +135,79 @@ b {
 td {
     text-align: center;
     padding: 5% 5% 0 5%;
+}
+
+@media (max-width: 800px) {
+    .logo {
+        max-width: 150px;
+    }
+}
+@media (max-width: 727px) {
+    .menuInfo {
+        margin:auto;
+    }
+    .name {
+        margin-top: 20px;
+    }
+    .logo {
+        top: 20px;
+    }
+}
+@media (max-width: 875px) {
+    .call{
+        margin-left: 85vw;
+    }
+}
+@media (max-width: 551px) {
+    .call{
+        margin-left: 82vw;
+    }
+}
+@media (max-width: 444px) {
+    .call{
+        margin-left: 75vw;
+    }
+}
+@media (max-width: 595px) {
+    .logo {
+        max-width: 100px;
+        top:40px;
+    }
+}
+@media (max-width: 503px) {
+    .logo {
+        max-width: 70px;
+        top:40px;
+    }
+    .brands {
+        max-width: 100px;
+    }
+}
+@media (max-width: 442px) {
+    .information{
+        margin: 0;
+        width: 100%;
+    }
+    .headerMenu {
+        margin: 2px;
+        font-size: 20px;
+    }
+    .name {
+        font-size: 50px;
+    }
+    .logo{
+        left: 2px;
+    }
+    .inormationContent {
+        font-size: 18px;
+    }
+    .headerContent{
+        margin: 0;
+        grid-column-gap: 5px;
+    }
+}
+@media (max-width: 497px) {
+    .tablePhoto {
+        width: 100px;
+    }
 }
