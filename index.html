@@ -9,11 +9,13 @@
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
-<body>
-    <header class="text">
-        <img class="logo" src="images/logo.png">
-        <p class="name">Droid</p>
-        <p class="slogan">Fix your device for low prices!</p>
+<body class="fonts">
+    <header>
+        <div class="mainName">
+            <img class="logo" src="images/logo.png">
+            <p class="name">Droid</p>
+            <p class="slogan">Fix your device for low prices!</p>
+        </div>
         <div class="inormationContent">
             <p>Тел.: 8(3822)94-06-06</p>
             <p>Режим работы: Ежедневно, 10:00 — 20:00</p>
@@ -27,39 +29,39 @@
         </ul>
     </header>
     <!--Оформление заказа-->
-    <div>
-        <p>Сервисный центр</p>
+    <div class="information">
+        <p class="infoTitle">Сервисный центр</p>
         <input type="text" placeholder="Имя">
         <input type="text" placeholder="Телефон">
         <button>Позвони мне</button>
     </div>
     <!--Преимущества сервиса-->
-    <div>
-        <p>О нас</p>
-        <p>Минимальные сроки ремонта</p>
+    <div class="information">
+        <p class="infoTitle">О нас</p>
+        <p class="tableTitle">Минимальные сроки ремонта</p>
         <p>Благодаря большому опыту инженеров и наличию запасных 
             частей на складе мы выполним ремонт быстро, качественно и 
             недорого. До 80% заказов специалисты выполняют в день обращения.</p>
-        <p>Бесплатная диагностика</p>
+        <p class="tableTitle">Бесплатная диагностика</p>
         <p>Диагностика в течении 5 минут. Инженеры на месте определят 
             неполадки, стоимость ремонта и сколько времени это займет.</p>
-        <p>Ответственность за результат</p>
+        <p class="tableTitle">Ответственность за результат</p>
         <p>Используем только качественные запасные части и строго соблюдаем 
             технологию проведения ремонта. Предоставляем гарантию на 
             выполненные работы и замененные комплектующие.</p>
-        <p>Информирование</p>
+        <p class="tableTitle">Информирование</p>
         <p>Мы предоставляем нашим клиентам бесплатное sms-информирование
              о завершении ремонта. Специалисты нашего call-центра 
              всегда готовы ответить на все Ваши вопросы.</p>
     </div>
     <!--Возможные неисправности-->
-    <div>
-        <p>Возможные неисправности</p>
+    <div class="information">
+        <p class="infoTitle">Возможные неисправности</p>
         <table>
             <tr>
                 <td><img src="images/1.png"></td>
                 <td>
-                    <p>Замена дисплейного модуля</p>
+                    <p class="tableTitle">Замена дисплейного модуля</p>
                     <p>Разбит дисплей, не работает сенсор, не показывает экран
                         1000
                     </p>
@@ -68,7 +70,7 @@
             <tr>
                 <td><img src="images/2.png"></td>
                 <td>
-                    <p>Замена аккумулятора</p>
+                    <p class="tableTitle">Замена аккумулятора</p>
                     <p>Не держит заряд, выключается на холоде или вздулся аккумулятор. А так же, если попала влага или был сильный удар.
                     </p>
                 </td>
@@ -76,7 +78,7 @@
             <tr>
                 <td><img src="images/3.png"></td>
                 <td>
-                    <p>Обновление программного обеспечения</p>
+                    <p class="tableTitle">Обновление программного обеспечения</p>
                     <p>Ошибки приложений Android, не работает Google Play, не открывается галерея, Не видит сеть, нет русского языка
                         от 300</p>
                 </td>
@@ -84,7 +86,7 @@
             <tr>
                 <td><img src="images/4.png"></td>
                 <td>
-                    <p>Чистка от коррозии после попадания жидкости</p>
+                    <p class="tableTitle">Чистка от коррозии после попадания жидкости</p>
                     <p>Залит телефон, внутри влага, утопили
                     от 1000 
                     </p>
@@ -93,20 +95,293 @@
         </table>
     </div>
     <script type="text/javascript" src="/js/fotorama.js"></script>
-    <!--Слайдер-->
-    <div class="fotorama">
-        <table>
-
+    <!--Слайдер с ценами-->
+    <div class="information">
+        <p class="infoTitle">Прайс-лист</p>
+        <div class="fotorama tablePrice">
+            <table>
+            <caption class="tableTitle">Пересборка</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>350</td>
+                <td>500</td>
+            </tr>
         </table>
+        <table>
+            <caption class="tableTitle">Замена сенсорного стекла</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>600</td>
+                <td>1000</td>
+                <td>1500</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена дисплейного модуля в сборе с Тачскрином</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>1200</td>
+                <td>1500</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена корпуса / средней части</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>500</td>
+                <td>800</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена кнопки Home</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>600</td>
+                <td>800</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена кнопок Включения, Громкости</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>400</td>
+                <td>600</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена аккумуляторной батареи</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>500</td>
+                <td>800</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена динамика</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>600</td>
+                <td>800</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена основной / фронтальной камеры</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>600</td>
+                <td>800</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена шлейфа Дисплея / Сканера отпечатка</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>800</td>
+                <td>1200</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена разъёма гарнитуры (3.5 mini Jack)</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>800</td>
+                <td>1000</td>
+                <td>1500</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена разъёма SIM / карты памяти</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>1500</td>
+                <td>2000</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Ремонт / Замена разъёма зарядки / микрофона</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>600</td>
+                <td>800</td>
+                <td>1200</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Восстановление контактной группы</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>800</td>
+                <td>1500</td>
+                <td>2000</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Замена контроллера зарядки / питания</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>1500</td>
+                <td>2000</td>
+                <td>3000</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Ремонт системной платы на компонентном уровне</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>1500</td>
+                <td>2500</td>
+                <td>4000</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Чистка от коррозий после попадания жидкости</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>1500</td>
+                <td>2000</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Обновление Програмного обеспечения (Android)</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>500</td>
+                <td>1000</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Обновление Програмного обеспечения (Android) не типовое</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>1000</td>
+                <td>1500</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Восстановление IMEI / SN / MAC Wi-Fi / MAC Bluetooth</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>1000</td>
+                <td>1500</td>
+            </tr>
+        </table>
+        <table>
+            <caption class="tableTitle">Отвязка от Google, Mi-Аккаунта, Flyme-аккаунта, Huawei-аккаунта</caption>
+            <tr>
+                <td>Базовая цена</td>
+                <td>Средняя сложность</td>
+                <td>Сложный ремонт</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>1500</td>
+                <td>2000</td>
+            </tr>
+        </table>
+        </div>
     </div>
     <!--Контакты-->
-    <div>
-        <p>Контакты</p>
+    <div class="information">
+        <p class="infoTitle">Контакты</p>
     </div>
     <!--Слайдер с отзывами-->
-    <div>
-        <p>Отзывы</p>
-        <div class="fotorama">
+    <div class="information">
+        <p class="infoTitle">Отзывы</p>
+        <div class="fotorama feedback">
             <div>
                 <p>01.10.2019</p>
                 <p>Георгий Леонидович</p>
@@ -159,14 +434,17 @@
         </div>
     </div>
     <!--Слайдер с фотографиями-->
-    <div class="fotorama">
-        <img src="images/5.jpg" height="350px">
-        <img src="images/6.png" height="350px">
-        <img src="images/7.jpg" height="350px">
-        <img src="images/8.jpg" height="350px">
-        <img src="images/9.jpg" height="350px">
-        <img src="images/10.jpg" height="350px">
-        <img src="images/11.jpg" height="350px">
+    <div class="information">
+        <p class="infoTitle">Пример работы</p>
+        <div class="fotorama photos">
+            <img src="images/6.png" >
+            <img src="images/5.jpg" >
+            <img src="images/7.jpg" height="200px">
+            <img src="images/8.jpg" height="200px">
+            <img src="images/9.jpg" height="200px">
+            <img src="images/10.jpg" height="200px">
+            <img src="images/11.jpg" height="200px">
+        </div>
     </div>
     <footer>
         
