@@ -2,27 +2,33 @@ html,body {
     padding: 0;
     margin: 0;
 }
+
 ul {
     list-style-type: none;
     margin-left: 15%;
     padding-left: 0;
 }
+
 li{
-    display: inline;
+    display: inline-block;
 }
-.text {
+
+.fonts {
     font-family: Noto Sans, sans-serif;
 }
+
 .logo {
     position: relative;
-    width: 265px;
-    left: 126px;
+    width: 200px;
+    left: 15%;
     top: 45px;
 }
+
 header {
     background-color: #B1BECA;
     height: 355px;
 }
+
 .about {
     position: absolute;
     width: 93px;
@@ -31,6 +37,7 @@ header {
     top: 268px;
     font-size: 24px;
 }
+
 .price {
     position: absolute;
     width: 95px;
@@ -39,6 +46,7 @@ header {
     top: 268px;
     font-size: 24px;
 }
+
 .contacts {
     position: absolute;
     width: 166px;
@@ -47,6 +55,7 @@ header {
     top: 268px;
     font-size: 24px;
 }
+
 .work {
     position: absolute;
     width: 163px;
@@ -55,6 +64,7 @@ header {
     top: 268px;
     font-size: 24px;
 }
+
 .slogan {
     position: absolute;
     width: 315px;
@@ -63,6 +73,7 @@ header {
     top: 161px;
     font-size: 20px;
 }
+
 .name {
     position: absolute;
     width: 152px;
@@ -71,6 +82,7 @@ header {
     top: 60px;
     font-size: 60px;
 }
+
 .inormationContent {
     position: absolute;
     width: 398px;
@@ -78,4 +90,38 @@ header {
     left: 915px;
     top: 80px;
     font-size: 18px;
+}
+
+.feedback {
+    margin:0 25% 0 25%;
+    width:50%;
+}
+
+.photos {
+    margin:0 25% 0 25%;
+    width:50%;
+}
+
+.information {
+    margin:0 15% 0 15%;
+    width:70%;
+}
+
+.infoTitle {
+    font-size: 30px;
+}
+
+.tableTitle {
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.tablePrice {
+    margin:0 25% 0 25%;
+    width:70%;
+    height: 10%;
+}
+
+.fotorama__wrap {
+    margin: 0 auto;
 }
