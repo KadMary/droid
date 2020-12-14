@@ -125,3 +125,41 @@ header {
 .fotorama__wrap {
     margin: 0 auto;
 }
+
+.fotorama_stage {
+    height: 150px !important;
+}
+
+.bags {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.feedbackWhenAndWho {
+    font-size: 18px;
+}
+
+.feedbackProblem {
+    font-size: 22px;
+}
+
+.call {
+    position: fixed;
+    left: 90vw;
+    top: 85vh;
+}
+
+footer {
+    background-color: #B1BECA;
+}
+
+.footerStyle {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 10px;
+}
